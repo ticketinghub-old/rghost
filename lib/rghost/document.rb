@@ -321,17 +321,6 @@ class RGhost::Document < RGhost::PsFacade
   def virtual_pages(&block)
     set RGhost::VirtualPages.new(&block)
   end
-  {
-       :base => -4,
-     :print => -4,
-     :modify => -8,
-     :copy => -16,
-     :annotate => -32,
-     :interactive => -256,
-     :copy_access =>  -512,
-     :assemble => -1024,
-     :high_quality_print => -2048,
-     :all => -3904}
   
   #Security disable the permissions and define passwords to PDF documents. 
   #The password just support set of \w .
